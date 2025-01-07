@@ -5,17 +5,12 @@ This project is a basic implementation of a real-time chat application using mod
 ## Features
 
 - Real-time messaging
-- User authentication
-- Chat rooms
-- Typing indicators
 
 ## Technologies Used
 
 - Node.js
 - Express.js
 - Socket.io
-- MongoDB
-- Passport.js
 - HTML/CSS
 - JavaScript
 
@@ -27,8 +22,7 @@ This project is a basic implementation of a real-time chat application using mod
    ```
 2. Navigate to the project server directory:
    ```bash
-   cd simple-realtime-chat
-   cd server
+   cd simple-realtime-chat\server
    ```
 3. Install dependencies:
    ```bash
@@ -38,8 +32,8 @@ This project is a basic implementation of a real-time chat application using mod
    - Create a `.env` file in the root directory
    - Add the following variables:
      ```
-     MONGODB_URI=your_mongodb_uri
-     SESSION_SECRET=your_session_secret
+      PORT=3030
+      WS_PORT=3031
      ```
 
 ## Usage
@@ -48,8 +42,11 @@ This project is a basic implementation of a real-time chat application using mod
    ```bash
    npm start
    ```
-2. Open your browser and navigate to `http://localhost:3000`
-3. Run live server on app/index.html
+   or
+   ```bash
+   npm run dev
+   ```
+2. Start the client from app/index.html with Live Server
 
 ## Contributing
 
